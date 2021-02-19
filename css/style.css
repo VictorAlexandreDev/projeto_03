@@ -1,0 +1,382 @@
+*{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      text-decoration: none;
+      list-style-type: none;
+      font-family: 'Roboto';
+}
+.container{
+      margin: 0 auto;
+      max-width: 1680px;
+      padding: 0 2%;
+}
+.clear{
+      clear: both;
+}
+header.top-header{
+      width: 100%;
+      background-color: #333333;
+      height: 100px;
+      padding-top: 30px;
+}
+.top-header h2{
+      font-size: 30px;
+      color: #7eabbb;
+}
+header.sub-header{
+      width: 100%;
+      height: 80px;
+      background-color: #292929;
+      
+}
+header.sub-header > .container{
+      max-width: 1700px;
+}
+nav.desktop{
+      padding-top: 29px;
+}
+.sub-header ul{
+      display: flex;
+}
+.sub-header a{
+      font-size: 18px;
+      color: white;
+      text-transform: uppercase;
+      padding: 28px 20px;
+}
+.sub-header a:hover{
+      background-color: #7eabbb;
+      color: black;
+      font-weight: bolder;
+}
+/****** MENU MOBILE RESPONSIVE ********/
+
+nav.mobile{
+     display: none;
+     flex-direction: column; 
+}
+.mobile h3{
+      display: flex;
+      align-self: flex-end;
+      font-size: 26px;
+      color: #7eabbb;
+      cursor: pointer;
+      margin-right: 20px;
+      position: relative;;
+      top: -28px;
+}
+.mobile ul{
+      display: none;
+      text-align: center;
+      margin-top: 7px;
+}
+.mobile li{
+      border-right: 2px solid#7eabbb;
+      border-left: 2px solid#7eabbb;
+      border-bottom: 2px solid #7eabbb;
+      background-color: #292929;
+      padding: 15px;
+}
+.mobile #border{
+      border-top: 2px solid #7eabbb;
+}
+.mobile a{
+      padding: 15px 30px;
+      color: white;
+      text-transform: uppercase;
+}
+.mobile a:hover{
+      font-weight: bolder;
+      background-color: #7eabbb;
+      color: black;
+      transition: 1s;
+}
+.mobile li:hover {
+      background-color: #7eabbb;
+}
+/******* FINAL DO MENU MOBILE RESPONSIVO *******/
+
+section.bg{
+      background-image: url('../img/bg2.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      height: 600px;
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: flex-end;
+      max-width: 100%;
+}
+.bem-vindo{
+      padding: 0 80px 80px 0;
+}
+.bem-vindo h2 {
+      color: white;
+      font-size: 50px;
+      font-weight: lighter;
+      text-transform: uppercase;
+}
+.bem-vindo p{
+      color: #7eabbb;
+      font-weight: bolder;
+      font-size: 32px;
+      letter-spacing: 3px;
+      text-transform: lowercase;
+}
+section.equipe .time{
+      text-align: center;
+      width: 100%;
+      max-width: 800px;
+      padding: 100px 4% 50px 4%;
+      margin: 0 auto;
+}
+.time h2{
+      font-size: 40px;
+      text-transform: uppercase;
+      color: #7eabbb;
+      padding-bottom: 20px;
+}
+.time .borda{
+      margin: 0 auto;
+      width: 100%;
+      max-width: 40%;
+      height: 2px;
+      background-color: #7eabbb;
+      margin-bottom: 50px;
+}
+.time p{
+      line-height: 20px;
+      font-size: 15px;
+      padding: 0 4%;
+}
+.time-single{
+      padding: 50px 4%;
+      text-align: center;
+}
+.fotos-time{
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+}
+.img-time img{
+      max-width: 300px;
+      width: 100%;
+      margin: 0px 4px 15px 4px;
+}
+.fotos-time h2{
+      font-weight: normal;
+      text-transform: capitalize;
+      margin: 15px 0 30px 0;
+}
+.fotos-time p{
+      line-height: 20px;
+      font-size: 15px;
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 0 4%;
+}
+section.feedback{
+      background-color: #1f3138;
+      width: 100%;
+}
+.satisfacao{
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+}
+.satisfacao-single{
+      text-align: center;
+      padding: 50px 4%;
+}
+.satisfacao-single h2{
+      color: #7eabbb;
+      font-size: 35px;
+}
+.satisfacao-single p{
+      color: white;
+      font-size: 20px;
+      letter-spacing: 2px;
+      margin-top: 10px;
+}
+
+section.bg2{
+      background-image: url('../img/bg1.jpg');
+      background-size: cover;
+      background-position: center center;
+      width: 100%;
+      height: 100%;
+      max-height: 600px;
+}
+section.contact-section{
+      background-color: #2a3e47;
+      padding: 100px 0;
+      text-align: center;
+}
+.inner-width{
+      max-width: 600px;
+      margin: auto;
+      padding: 0 20px;
+}
+.contact-section h2{
+      font-size: 24px;
+      color: #7eabbb;
+      margin-bottom: 40px;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      font-weight: 400;
+}
+.name,.email,.mensagem{
+      color: white;
+      background: none;
+      border: none;
+      outline: none;
+      border-bottom: 1px solid #7eabbb;
+      padding: 10px 6px;
+      font-size: 14px;
+      margin-bottom: 40px;
+}
+.name{
+      float: left;
+      width: 270px;
+}
+.email{
+      float: right;
+      width: 270px;
+}
+.mensagem{
+      min-width: 100%;
+      max-width: 100%;
+}
+.contact-section button{
+      background: none;
+      color: #999;
+      border: 1px solid #7eabbb;
+      padding: 12px 40px;
+      border-radius: 8px;
+      text-transform: uppercase;
+      font-size: 14px;
+      cursor: pointer;
+}
+.contact-section button:hover{
+      background: #1f3138;
+      color: white;
+}
+section.top-footer{
+      background-color: #292929;
+}
+.content-top-footer{
+      display: grid;
+      grid-template-columns: repeat(5,1fr);
+      padding: 60px 0 60px 0;
+}
+.content-single{
+      margin: 0 auto;
+}
+.content-single h2{
+      color: #7eabbb;
+      text-transform: uppercase;
+      font-size: 20px;
+      padding-bottom: 10px;
+}
+.content-single p{
+      color: white;
+      text-transform: capitalize;
+      padding-bottom: 10px;
+      cursor: pointer;
+      text-decoration: underline;
+}
+footer{
+      background-color: #191919;
+}
+footer > .container{
+      padding: 30px 4%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; 
+}
+.direitos-autorais{
+      color: #7eabbb;
+}
+.social-media h3{
+      color: #7eabbb;
+      display: inline-block;
+      font-size: 22px;
+      cursor: pointer;
+      padding: 0 10px;
+}
+@media screen and (max-width:1024px){
+      header.sub-header{
+            display: none;
+      }
+      nav.mobile{
+            display: flex;
+      }
+      section.bg2{
+            background-image: url('../img/bg1.jpg');
+            background-size: cover;
+            background-position: 45%;
+            width: 100%;
+            height: 100%;
+            max-height: 500px;
+      }
+      .content-top-footer{
+            grid-template-columns: repeat(3,1fr);
+      }
+      .content-single{
+            padding-bottom: 40px;
+      }
+}
+@media screen and (max-width:768px){
+      .time h2{
+            font-size: 30px;
+      }
+      .time .borda{
+            max-width: 32%;
+      }
+      .fotos-time{
+            grid-template-columns: 1fr;
+      }
+      .satisfacao{
+            grid-template-columns: repeat(2,1fr);
+      }
+      .name,.email{
+            width: 100%;
+      }
+      .content-top-footer{
+            grid-template-columns: repeat(2,1fr);
+            text-align: center;
+      }
+      footer > .container{
+            flex-direction: column;
+      }
+      .direitos-autorais{
+            padding-bottom: 20px;
+            text-align: center;
+      }
+}
+@media screen and (max-width:640px){
+      .bem-vindo{
+            padding: 0 0 80px 0;
+            margin: 0 auto;
+            text-align: left;
+      }
+      .bem-vindo h2 {
+            font-size: 40px;
+      }
+      .bem-vindo p{
+            font-size: 24px;
+      }
+}
+@media screen and (max-width:375px){
+      .satisfacao{
+            grid-template-columns: 1fr;
+      }
+      .time h2{
+            font-size: 26px;
+      } 
+      .bem-vindo h2 {
+            font-size: 36px;
+      }
+      .content-top-footer{
+            grid-template-columns: 1fr;
+      }
+}
